@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>3의 배수인지 확인</title>
+	<link rel="stylesheet" href="css/multi3.css">
+</head>
+<body>
+	<div id="result"></div>
+	<script>
+		var inputValue = prompt("3의 배수인지 확인하고자 하는 수를 입력하세요.");
+		var resultTag = document.querySelector('#result');
+		
+		if (inputValue % 3 == 0) {
+			resultTag.innerHTML = `${inputValue}은 3의 배수가 맞습니다.`
+		} 
+		else {
+			resultTag.innerHTML = `${inputValue}은 3의 배수가 아닙니다.`
+		}
+
+	</script>
+</body>
+</html>
